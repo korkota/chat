@@ -1,0 +1,8 @@
+language: dart
+sudo: required
+dart:
+  - stable
+before_script: chmod a+x ./tool/travis.sh
+script: ./tool/travis.sh
+env:
+  - DARTANALYZER_FLAGS=--fatal-warnings

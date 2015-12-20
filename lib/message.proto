@@ -1,0 +1,8 @@
+package server.proto;
+
+message Message
+{
+    required string Sender = 1;
+    required string Text   = 2;
+    optional string Data   = 3;
+}
